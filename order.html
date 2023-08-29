@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <title>ZAMÓW</title>
+</head>
+
+<body style='background-color: #191919'>
+  <header class='container-fluid order-page p-0'>
+    <div class="container navigation px-lg-0 pt-lg-5 pt-20">
+      <nav class="navbar navbar-expand-xl d-flex justify-content-center justify-content-between px-0 bg-transparent">
+        <button class="custom-toggler navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand p-0" href="index.html">
+          <img src="./img/logo.svg" alt="Logo" class='w-100 me-3'>
+        </a>
+        <div class="collapse navbar-collapse me-lg-3 mt-3 mt-lg-0 justify-content-around text-center" id="navbar-menu">
+          <ul class="navbar-nav">
+            <li class="nav-item font-20 pr-19">
+              <a class="nav-link px-0" aria-current="page" href="#">COPRESLIN</a>
+            </li>
+            <li class="nav-item font-20 pr-19">
+              <a class="nav-link px-0" href="#">BĄDŹ FIT</a>
+            </li>
+            <li class="nav-item font-20 pr-19">
+              <a class="nav-link px-0" href="#">JEDYNY TAKI</a>
+            </li>
+            <li class="nav-item font-20">
+              <a class="nav-link px-0" href="#">WARTO OBSERWOWAĆ</a>
+            </li>
+          </ul>
+        </div>
+        <a href="order.html" class="btn-custom btn d-none d-xl-inline" tabindex="-1" role="button"
+          aria-disabled="true">ZAMÓW</a>
+      </nav>
+    </div>
+    <div class="container-custom d-flex flex-column order-box align-items-center ">
+      <h1 class='fw-bold fst-italic order-heading'>Formularz zamówienia</h1>
+      <div class='d-none d-xl-block order-desc'>
+        <form class='d-flex justify-content-center order-form position-relative'>
+          <div class="label-box d-flex flex-column position-absolute">
+            <label for="Imię" class="label-for-name col-form-label text-start text-sm-end p-0 mb-3">Imię i nazwisko
+              /<br>
+              Firma
+            </label>
+            <label for="Adres" class="col-form-label text-start text-sm-end p-0 mb-4">Adres</label>
+            <label for="Email" class="col-form-label text-start text-sm-end p-0 mb-4">E-mail</label>
+            <label for="Telefon" class="col-form-label text-start text-sm-end p-0 mb-3">Telefon</label>
+          </div>
+          <div class="input-box d-flex flex-column align-items-center">
+            <input type="email" class="form-control border rounded-1 border-2 mb-3" id="Imię">
+            <input type="password" class="form-control border rounded-1 border-2 mb-3" id="Adres">
+            <input type="password" class="form-control border rounded-1 border-2 mb-3" id="Email">
+            <input type="password" class="form-control border rounded-1 border-2" id="Telefon">
+          </div>
+        </form>
+      </div>
+      <div class='d-block d-xl-none order-mobile'>
+        <form class='order-form container-fluid d-flex flex-column align-items-center'>
+          <div class="row order-item mb-3">
+            <label for="Imię" class="col-form-label text-start p-0">Imię i
+              nazwisko/Firma</label>
+            <div class="order-input col-8 p-0">
+              <input type="email" class="form-control border rounded-1 border-2" id="Imię">
+            </div>
+          </div>
+          <div class="row order-item mb-3">
+            <label for="Adres" class="col-form-label text-start p-0">Adres</label>
+            <div class="order-input col-8 p-0">
+              <input type="email" class="form-control border rounded-1 border-2" id="Adres">
+            </div>
+          </div>
+          <div class="row order-item mb-3">
+            <label for="E-mail" class="col-form-label text-start p-0">E-mail</label>
+            <div class="order-input col-8 p-0">
+              <input type="email" class="form-control border rounded-1 border-2" id="E-mail">
+            </div>
+          </div>
+          <div class="row order-item mb-3">
+            <label for="Telefon" class="col-form-label text-start p-0">Telefon</label>
+            <div class="order-input col-8 p-0">
+              <input type="email" class="form-control border rounded-1 border-2" id="Telefon">
+            </div>
+          </div>
+        </form>
+      </div>
+      <button type="button" class="btn col-sm-8 btn-order">ZAMÓW</button>
+    </div>
+  </header>
+  <footer>
+    <div class='container footer-box row'>
+      <img class='container footer-logo col-xl-2 col-lg-8 col-8' src="./img/logo.svg" alt="logo">
+      <p class='footer-note'>
+        *Produkt na tej stronie nie ma właściwości leczniczych. Przed użyciem
+        należy zapoznać się z instrukcją i stosować urządzenie zgodnie z nią.
+        Produkt nie jest objęty gwarancja osiągnięcia prezentowanych rezultatów.
+        Działanie urządzenia jest kwestią indywidualną dla każdej osoby i może
+        dawać różne efekty w zależności od indywidualnych uwarunkowań każdego
+        organizmu.
+      </p>
+      <div class="d-flex footer-links flex-column flex-xl-row align-items-center justify-content-md-center">
+        <a class="footer-link pb-3 pb-xl-0" href="#">Regulamin</a>
+        <a class="footer-link pb-3 pb-xl-0" href="#">Polityka prywatności</a>
+        <a class="footer-link" href="#">Kontakt</a>
+      </div>
+      <hr class="footer-hr">
+      <p class='footer-copyrights'>Copyrights © 2022 <span class='fw-bold'>COPRESLIN</span>. All rights
+        reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
